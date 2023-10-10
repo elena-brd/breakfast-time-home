@@ -1,0 +1,56 @@
+@media(max-width:700px) {
+    .main-header {
+        .container {
+            display: block;
+            text-align: center;
+            padding: 1.5rem 0 1rem;
+        }
+
+        ul {
+            display: block;
+        }
+
+        li {
+            margin: 1rem;
+        }
+    }
+
+    .menu {
+        &-cards {
+            display: block;
+        }
+
+        .card {
+            display: block;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .btn-primary {
+            width: 100%;
+        }
+    }
+
+    .contact {
+        .container {
+            text-align: center;
+            display: block;
+            padding: 1rem;
+        }
+
+        form {
+            width: 100%;
+            padding: 0.5rem 5rem;
+        }
+
+        .btn-secondary {
+            width: 100%;
+        }
+    }
+
+
+}

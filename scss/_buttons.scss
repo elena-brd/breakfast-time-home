@@ -1,0 +1,32 @@
+%btn {
+    display: block;
+    cursor: pointer;
+    border: none;
+    padding: 0.4rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500
+}
+
+.btn-primary {
+    @extend %btn;
+    background: $primary-orange-color;
+    color: $dark-color;
+    width: 60%;
+
+    &:hover {
+        background: $secondary-orange-color;
+        @include transform(scale(0.98))
+    }
+}
+
+.btn-secondary {
+    @extend %btn;
+    background: $primary-orange-color;
+
+    &:hover {
+        background: $light-blue-color;
+        @include transform(scale(0.98))
+    }
+}

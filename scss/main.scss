@@ -1,0 +1,167 @@
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    color: $dark-color;
+    line-height: 1.5;
+}
+
+.logo h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+// header
+.main-header {
+    background: $main_img no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(100%);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        padding: 0.88rem 5rem;
+        background-color: rgba($color: #ffffff, $alpha: 0.75);
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    a {
+        margin: 0 1rem;
+        text-transform: uppercase;
+        color: $dark-color;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-size: 1.05rem;
+    }
+
+    a:hover {
+        border-bottom: 3px solid $primary-orange-color;
+    }
+}
+
+// menu
+.menu {
+    margin: 2.5rem 0;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        border: 1px solid $secondary-orange-color;
+        border-radius: 5px;
+        overflow: hidden
+    }
+
+    .card img {
+        width: 250px;
+    }
+
+    .card-info {
+        margin: 1rem;
+    }
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .card-menu-price p {
+        margin: 0.2rem 0 0.5rem;
+        color: $dark-orange-color;
+        font-weight: 500;
+    }
+}
+
+// contact 
+.contact {
+    background: $dark-orange-color;
+    color: #fff;
+    padding: 1rem 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h3 {
+        font-weight: 400;
+    }
+
+    #email-input {
+        border: 2px solid $primary-orange-color;
+        background: #f4f4f4;
+        border-radius: 5px;
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #email-input:focus {
+        outline: none;
+        border-color: $primary-blue-color;
+    }
+}
+
+.hover-showcase {
+    background: $second-image no-repeat center center/cover;
+    height: 40vh;
+}
+
+
+.main-footer {
+    background: $dark-color;
+    color: #fff;
+    padding: 2rem 0;
+
+    ul {
+        list-style: none;
+        display: flex;
+    }
+
+    a {
+        color: #fff;
+        margin: 0.5rem 0.1rem 1rem 1.5rem;
+    }
+
+    .socials {
+        display: flex;
+    }
+}
+
+@import 'mobile';

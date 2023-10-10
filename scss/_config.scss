@@ -1,0 +1,14 @@
+$primary-orange-color: #ffaa36;
+$secondary-orange-color: #ffbf69;
+$primary-blue-color: #2ec4b6;
+$light-blue-color: #cbf3f0;
+$dark-color: #181818;
+$dark-orange-color: #872a02;
+$font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+$main_img: url('https://images.unsplash.com/photo-1530006261244-0ae043004358?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+$second-image: url('https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+
+@mixin transform($property) {
+    transform: $property;
+}
